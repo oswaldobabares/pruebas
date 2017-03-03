@@ -1,0 +1,70 @@
+body {
+	width: 100%;
+	background-color: #c5c5c5;
+	margin: 0 auto;
+}
+
+.contHeader {
+	display: flex;
+    width: 100%;
+    background-color: green;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.labelHide {
+    display: none;
+    transition: opacity 1s ease-out;
+    opacity: 0;
+}
+
+.labelShow {
+    display: block;
+    opacity: 1;
+}
+
+.itemText{
+    width: 33.3%;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-family: cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.itenImg {
+    width: 33.3%;
+    text-align: center;
+    background-color: #5c5c5c;  
+}
+
+.itenImg img {
+    width: 300px;
+    height: 100px;
+}
+
+.itenImgScroll {
+    width: 33.3%;   
+    text-align: center;
+    background-color: #5c5c5c;
+}
+
+.itenImgScroll img {
+    width: 60px;
+    height: 60px;
+}
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: default;
+    height: 1500px;
+    overflow: hidden;
+    position: inherit;
+    text-align: center;
+}

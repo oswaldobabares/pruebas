@@ -1,0 +1,16 @@
+    var mainbottom = $('#isotipo').offset().top + $('#isotipo').height();
+    $(window).on('scroll',function(){
+        // we round here to reduce a little workload
+        stop = Math.round($(window).scrollTop());
+        if (stop > mainbottom) {
+            $('#containerIsotipo').addClass('opacity_cir_black');
+            $('#isotipoPosition').addClass('opacity_isotipo');
+            $('#containerIsotipo_mobile').addClass('opacity_cir_black');
+            $('#isotipoPosition_mobile').addClass('opacity_isotipo');
+        } else {
+            $('#containerIsotipo').removeClass('opacity_cir_black');
+            $('#isotipoPosition').removeClass('opacity_isotipo');
+            $('#containerIsotipo_mobile').removeClass('opacity_cir_black');
+            $('#isotipoPosition_mobile').removeClass('opacity_isotipo');
+        }
+    });
